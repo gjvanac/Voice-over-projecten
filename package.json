@@ -26,4 +26,13 @@
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pm2:start": "node ./node_modules/.bin/pm2 start npm --name 'nextjs-app' -- start",
+    "pm2:stop": "node ./node_modules/.bin/pm2 stop nextjs-app",
+    "pm2:restart": "node ./node_modules/.bin/pm2 restart nextjs-app"
+  },
 }
