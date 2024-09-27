@@ -98,5 +98,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(500).json({ message: 'Internal server error', error: error.message });
   } else {
     res.status(500).json({ message: 'Internal server error', error: 'An unknown error occurred' });
+    }
   }
 }
